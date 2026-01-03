@@ -10,4 +10,4 @@ spec:
   sourceRef:
     kind: GitRepository
     name: flux-system
-  path: ./infrastructure/controllers/gateway/base
+  path: ./infrastructure/gateway/base
