@@ -7,3 +7,5 @@ resources:
   - eaig.yaml
   - eg-crds.yaml
   - eg.yaml
+  - kserve-crds.yaml
+  - kserve.yaml
