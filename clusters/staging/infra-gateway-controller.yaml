@@ -14,7 +14,7 @@ spec:
   dependsOn:
     - name: gateway-api-inference-extension-crds
     - name: gateway-api-crds
-    - name: envoy-gateway-crds
+    # - name: envoy-gateway-crds
 # ---
 # apiVersion: kustomize.toolkit.fluxcd.io/v1
 # kind: Kustomization
