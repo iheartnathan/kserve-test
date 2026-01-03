@@ -37,19 +37,19 @@ spec:
 #     kind: GitRepository
 #     name: flux-system          
 #   path: ./infrastructure/crds/eaig/overlays/staging
----
-apiVersion: kustomize.toolkit.fluxcd.io/v1
-kind: Kustomization
-metadata:
-  name: envoy-gateway-crds
-  namespace: flux-system
-spec:
-  interval: 10m
-  prune: false
-  sourceRef:
-    kind: GitRepository
-    name: flux-system          
-  path: ./infrastructure/crds/eg/overlays/staging
+# ---
+# apiVersion: kustomize.toolkit.fluxcd.io/v1
+# kind: Kustomization
+# metadata:
+#   name: envoy-gateway-crds
+#   namespace: flux-system
+# spec:
+#   interval: 10m
+#   prune: false
+#   sourceRef:
+#     kind: GitRepository
+#     name: flux-system          
+#   path: ./infrastructure/crds/eg/overlays/staging
 ---
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
