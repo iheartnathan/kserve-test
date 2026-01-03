@@ -6,7 +6,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 10m
-  prune: false
+  prune: true
   sourceRef:
     kind: GitRepository
     name: flux-system          
@@ -19,7 +19,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 10m
-  prune: false
+  prune: true
   sourceRef:
     kind: GitRepository
     name: flux-system          
@@ -32,7 +32,7 @@ spec:
 #   namespace: flux-system
 # spec:
 #   interval: 10m
-#   prune: false
+#   prune: true
 #   sourceRef:
 #     kind: GitRepository
 #     name: flux-system          
@@ -45,7 +45,7 @@ spec:
 #   namespace: flux-system
 # spec:
 #   interval: 10m
-#   prune: false
+#   prune: true
 #   sourceRef:
 #     kind: GitRepository
 #     name: flux-system          
@@ -58,7 +58,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 10m
-  prune: false
+  prune: true
   sourceRef:
     kind: GitRepository
     name: flux-system          
@@ -71,7 +71,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 10m
-  prune: false
+  prune: true
   sourceRef:
     kind: GitRepository
     name: flux-system          
