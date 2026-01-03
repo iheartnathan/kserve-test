@@ -1,0 +1,17 @@
+# ---
+# apiVersion: kustomize.toolkit.fluxcd.io/v1
+# kind: Kustomization
+# metadata:
+#   name: vllm-disagg
+#   namespace: flux-system
+# spec:
+#   interval: 10m
+#   prune: true
+#   sourceRef:
+#     kind: GitRepository
+#     name: flux-system
+#   path: ./llm/vllm-disagg/base/
+#   dependsOn:
+#     - name: model-download
+#     - name: nvidia-dynamo
+
