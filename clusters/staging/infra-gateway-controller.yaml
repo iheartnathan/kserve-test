@@ -13,7 +13,7 @@ spec:
   path: ./infrastructure/controllers/eg/overlays/staging
   dependsOn:
     - name: gateway-api-inference-extension-crds
-    - name: gateway-api-crds
+    # - name: gateway-api-crds
     # - name: envoy-gateway-crds
 ---
 apiVersion: kustomize.toolkit.fluxcd.io/v1
@@ -30,5 +30,5 @@ spec:
   path: ./infrastructure/controllers/eaig/overlays/staging
   dependsOn:
     - name: gateway-api-inference-extension-crds
-    - name: gateway-api-crds
+    # - name: gateway-api-crds
     - name: envoy-ai-gateway-crds
