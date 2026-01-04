@@ -11,19 +11,19 @@ spec:
     kind: GitRepository
     name: flux-system          
   path: ./infrastructure/crds/gaie/
----
-apiVersion: kustomize.toolkit.fluxcd.io/v1
-kind: Kustomization
-metadata:
-  name: gateway-api-crds
-  namespace: flux-system
-spec:
-  interval: 10m
-  prune: true
-  sourceRef:
-    kind: GitRepository
-    name: flux-system          
-  path: ./infrastructure/crds/gateway-api/base
+# ---
+# apiVersion: kustomize.toolkit.fluxcd.io/v1
+# kind: Kustomization
+# metadata:
+#   name: gateway-api-crds
+#   namespace: flux-system
+# spec:
+#   interval: 10m
+#   prune: true
+#   sourceRef:
+#     kind: GitRepository
+#     name: flux-system          
+#   path: ./infrastructure/crds/gateway-api/base
 ---
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
