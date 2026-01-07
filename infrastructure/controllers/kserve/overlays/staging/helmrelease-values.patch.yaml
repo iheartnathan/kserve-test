@@ -11,4 +11,4 @@ spec:
           gateway:
             ingressGateway:
               enableGatewayApi: true
-              kserveGateway: default/kserve-ingress-gateway
+              kserveGateway: default/ai-gateway

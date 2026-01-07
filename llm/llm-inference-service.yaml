@@ -1,0 +1,28 @@
+apiVersion: serving.kserve.io/v1alpha1
+kind: LLMInferenceService
+metadata:
+  name: qwen-instruct
+  namespace: default
+spec:
+  model:
+    uri: "hf://Qwen/Qwen2.5-3B-Instruct"
+    name: Qwen/Qwen2.5-3B-Instruct
+  replicas: 2
+  router:
+    scheduler: { }
+    route: { }
+    gateway: { }
+  baseRefs:
+    - name: custom-config-llm-template
+  template:
+    containers:
+      - name: main
+        resources:
+          limits:
+            cpu: '2'
+            memory: 16Gi
+            nvidia.com/gpu: 1
+          requests:
+            cpu: '1'
+            memory: 8Gi
+            nvidia.com/gpu: 1

@@ -1,0 +1,10 @@
+---
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - endpoint-picker-config.yaml
+  - llm-inference-service-config.yaml
+  - llm-inference-service.yaml
+  - ai-gateway-route.yaml
+  - backend-traffic-policy.yaml
+  
