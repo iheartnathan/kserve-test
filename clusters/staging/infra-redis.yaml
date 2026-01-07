@@ -10,6 +10,4 @@ spec:
   sourceRef:
     kind: GitRepository
     name: flux-system
-  path: ./infrastructure/controllers/nvidia-gpu-operator/overlays/staging
-  # dependsOn:
-  #   - name: nginx-gateway-fabric         
+  path: ./infrastructure/controllers/redis
