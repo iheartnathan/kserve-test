@@ -7,10 +7,12 @@ metadata:
 spec:
   interval: 10m
   prune: true
+  wait: true
+  timeout: 2m
   sourceRef:
     kind: GitRepository
-    name: flux-system          
-  path: ./infrastructure/crds/gaie/
+    name: gateway-api-inference-extension-crds
+  path: ./config/crd/
 # ---
 # apiVersion: kustomize.toolkit.fluxcd.io/v1
 # kind: Kustomization
