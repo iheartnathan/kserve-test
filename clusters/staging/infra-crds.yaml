@@ -6,7 +6,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 10m
-  prune: true
+  prune: false
   wait: true
   timeout: 2m
   sourceRef:
@@ -21,11 +21,13 @@ spec:
 #   namespace: flux-system
 # spec:
 #   interval: 10m
-#   prune: true
+#   prune: false
+#   wait: true
+#   timeout: 2m
 #   sourceRef:
 #     kind: GitRepository
-#     name: flux-system          
-#   path: ./infrastructure/crds/gateway-api/base
+#     name: gateway-api-crds
+#   path: ./config/crd/experimental
 ---
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
@@ -34,7 +36,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 10m
-  prune: true
+  prune: false
   sourceRef:
     kind: GitRepository
     name: flux-system          
@@ -60,7 +62,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 10m
-  prune: true
+  prune: false
   sourceRef:
     kind: GitRepository
     name: flux-system          
